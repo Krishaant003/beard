@@ -33,10 +33,12 @@ function App() {
     <>
       <div className="border-y-2  border-slate-900">
         <div className="md:flex pb-2 ">
-          <img
-            src={guy}
-            className=" lg:w-1/4 md:w-1/5   w-1/2 lg:ml-60 md:ml-46 min-[320px]:ml-12  my-1  p-auto"
-          />
+          <div className="w-1/2 mb-2">
+            <img
+              src={guy}
+              className="xl:scale-105 xl:ml-20 lg:scale-125 lg:mt-8 lg:ml-12 md:scale-150 md:mt-20 md:ml-16 min-[420px]:ml-20 max-[320px]:ml-20"
+            />
+          </div>
           <div className="w-0.5 md:h-auto h-0 ml-36 bg-slate-900"></div>
           <div className="bg-[#D2D7D3] md:w-full md:p-0.5 md:pl-4  p-4">
             <p className="text-[#767676]">Mens Collection</p>
@@ -59,7 +61,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className=" container mx-auto   p-4 mt-8 grid lg:grid-cols-4  md:grid-cols-2  grid-cols-1  ">
+        <div className=" container mx-auto   p-4  min-[420px]:pl-16 grid lg:grid-cols-4  md:grid-cols-2  grid-cols-1  ">
           {array.map((element) => (
             <AdjCard
               ImageUrl={element.ImageUrl}
